@@ -1,0 +1,28 @@
+name: coocree_code_creator_web
+description: Este pacote é responsavel pela comunicação da aplicação com o iframe em aplicações flutter web
+version: 1.0.0
+homepage: https://github.com/coocree/coocree_code_creator_web
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+  flutter: '>=3.0.0'
+
+flutter:
+  plugin:
+    implements: youtube_player_iframe
+    platforms:
+      web:
+        pluginClass: CodeCreatorWebPlatform
+        fileName: src/youtube_web_platform.dart
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  webview_flutter_platform_interface: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
