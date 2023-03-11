@@ -9,11 +9,11 @@ environment:
 
 flutter:
   plugin:
-    implements: youtube_player_iframe
+    implements: code_creator_web_platform
     platforms:
       web:
         pluginClass: CodeCreatorWebPlatform
-        fileName: src/youtube_web_platform.dart
+        fileName: src/code_creator_web_platform.dart
 
 dependencies:
   flutter:
